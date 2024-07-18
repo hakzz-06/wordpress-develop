@@ -273,7 +273,7 @@ class WP_Importer {
  * @param bool   $required
  * @return mixed
  */
-function get_cli_args( $param, $required = false ) {
+function get_unique_cli_args( $param, $required = false ) {
 	$args = $_SERVER['argv'];
 	if ( ! is_array( $args ) ) {
 		$args = array();
